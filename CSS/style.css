@@ -8,44 +8,52 @@ body {
     font-family: var(--titleFont);
     height: 100vh;
     background: rgb(12,24,33);
-    background: linear-gradient(180deg, rgba(12,24,33,1) 0%, rgba(0,0,0,1) 36%, rgba(72,71,78,1) 70%, rgba(204,201,220,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(12,24,33,1) 36%, rgba(72,71,78,1) 70%, rgba(204,201,220,1) 100%);
 }
 
 :root {
     --background: #324A5F;
     --titleFont: "Helvetica";
-    --textColor: #CCC9DC
+    --textColor: rgba(204,201,220,1)
 }
 
 @font-face {
     font-family: "Helvetica";
-    src: url(../Helvetica.ttf);
+    src: url(../FONTS/Helvetica.ttf);
 }
 
+.logoA{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
 
 #mainImage{
     width: 300px;
     height: 100%;
 }
 
-#info {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+.logoInfoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    font-size: 20px;
+    margin-left: 25px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    top: 0;
+    position: sticky;
 }
 
 .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 75px;
     font-size: 20px;
-    margin-top: 30px;
 }
 
 .menu .menuItem a{
@@ -65,10 +73,17 @@ nav {
 }
 .texte {
     margin-top: 20px;
-    font-size: 40px;
-    /* background: -webkit-linear-gradient(rgba(204,201,220,1) 0%, rgba(72,71,78,1) 36%, rgba(0,0,0,1) 70%, rgba(12,24,33,1) 100%);
+    font-size: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+    /* background: -webkit-linear-gradient(rgba(204,201,220,1) 0%, rgba(0,0,0,1) 50%, rgba(12,24,33,1) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;  */
+}
+
+.containerLogoTexte{
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
