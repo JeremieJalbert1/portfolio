@@ -22,6 +22,12 @@ body {
     src: url(../FONTS/Helvetica.ttf);
 }
 
+.mainContainer {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
 .logoA{
     display: flex;
     align-items: center;
@@ -36,6 +42,7 @@ body {
 .logoInfoContainer {
     display: flex;
     align-items: center;
+    
 }
 
 .info{
@@ -44,12 +51,13 @@ body {
 }
 
 nav {
+    width: 98vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
     top: 0;
-    position: sticky;
+    position: absolute;
 }
 
 .menu {
@@ -61,6 +69,12 @@ nav {
     padding: 2px;
     text-decoration: none;
     margin-bottom: 5px;
+}
+
+.logoContainer {
+    width:  50%;
+    display: flex;
+    justify-content: center;
 }
 
 .texteContainer {
@@ -84,6 +98,7 @@ nav {
 .containerLogoTexte{
     display: flex;
     justify-content: space-between;
+    width: 100vw;
 }
 
 footer {
